@@ -19,3 +19,18 @@ body {
   padding-bottom: 1em;
   width: 100px;
 }
+
+.good {
+  background-color: white;
+  border: 1px solid black;
+  float: left;
+  height: 400px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  padding: 2em;
+  width: 400px;
+}
+
+.price {
+  color: darkblue;
+}

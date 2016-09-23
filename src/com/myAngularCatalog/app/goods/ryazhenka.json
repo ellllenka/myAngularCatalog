@@ -1,10 +1,11 @@
 {
-    "name": "ryazhenka",
+    "id": "ryazhenka",
+    "name": "Ряженка",
     "description": {
         "1": "Способствует очищению организма.",
         "2": "Усиливает природную защиту организма."
     },
     "price": "30",
     "quantity": "10",
-    "pictureLink": "../img/8.png"
+    "images": ["img/goods/ryazhenka.png"]
 }

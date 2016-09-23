@@ -2,6 +2,8 @@
 
 
 angular.module('catalogApp', [
+  'ngRoute',
+  'goodDetail',
+  'core',
   'goodList'
 ]);
-

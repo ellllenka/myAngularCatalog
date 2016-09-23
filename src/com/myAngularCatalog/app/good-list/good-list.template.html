@@ -3,15 +3,15 @@
     <div class="col-md-2">
 
       <p>
-        Search:
+        Поиск:
         <input ng-model="$ctrl.query">
       </p>
 
       <p>
-        Sort by:
+        Отсортировать:
         <select ng-model="$ctrl.orderProp">
-          <option value="name">Alphabetical</option>
-          <option value="price">Most expensive</option>
+          <option value="name">По алфавиту</option>
+          <option value="price">От дешовых к дорогим</option>
         </select>
       </p>
 
@@ -20,16 +20,16 @@
     <div class="col-md-10">
       <ul class="goods">
         <li ng-repeat="good in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
-          <a href="#/goods/{{good.id}}" class="thumb">
+          <a href="#!/goods/{{good.id}}" class="thumb">
             <img ng-src="{{good.imageUrl}}" alt="{{good.name}}" />
           </a>
-          <a href="#/goods/{{good.id}}">{{good.name}}</a>
+          <a href="#!/goods/{{good.id}}">{{good.name}}</a>
           <p>{{good.snippet}}</p>
         </li>
       </ul>
     </div>
   </div>
-  <pre>{{$ctrl.goods | filter:$ctrl.query | orderBy:$ctrl.orderProp | json}}</pre>
+  <!--<pre>{{$ctrl.goods | filter:$ctrl.query | orderBy:$ctrl.orderProp | json}}</pre>-->
 </div>
 
 

@@ -6,15 +6,24 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js "></script>
     <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
     <script src="good-list/good-list.module.js"></script>
     <script src="good-list/good-list.component.js"></script>
+    <script src="good-detail/good-detail.module.js"></script>
+    <script src="good-detail/good-detail.component.js"></script>
   </head>
   <body>
 
-  <good-list></good-list>
+  <div ng-view></div>
+
 
   </body>
 </html>
+
+
 
 

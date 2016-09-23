@@ -1,0 +1,9 @@
+<img ng-src="{{$ctrl.good.images[0]}}" class="good" />
+
+<h1>{{$ctrl.good.name}}</h1>
+<ul>
+  <li ng-repeat="descript in $ctrl.good.description">{{descript}}</li>
+</ul>
+
+<h3 class="price"> Цена - {{$ctrl.good.price}} гривен</h3>
+
