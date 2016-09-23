@@ -3,30 +3,15 @@
 // Register `phoneList` component, along with its associated controller and template
 angular.module('goodList').component('goodList', {
     templateUrl: 'good-list/good-list.template.html',
-    controller: ['$http', function GoodListController($http) {
-      // this.goods = [
-      //   {
-      //     name: 'Кефир',
-      //     snippet: 'Способствует восстановлению баланса бифидобактерий в организме.',
-      //     price: 20
-      //   }, {
-      //     name: 'Творог',
-      //     snippet: 'Способствует укреплению и здоровому росту мышц, костей и других тканей организма.',
-      //     price: 40
-      //   }, {
-      //     name: 'Ряженка',
-      //     snippet: 'Способствует очищению организма.',
-      //     price: 50
-      //   }
-      // ];
+    controller: ['Good', function GoodListController(Good) {
 
-      var self = this;
-      self.orderProp = 'price';
+      this.goods = Good.query();
+      this.orderProp = 'price';
 
-      $http.get('goods/goods.json').then(function (response) {
-        self.goods = response.data;
-        self.goods = response.data.slice(0, 5);
-      });
+      // $http.get('goods/goods.json').then(function (response) {
+      //   self.goods = response.data;
+      //   self.goods = response.data.slice(0, 5);
+      // });
     }]
   });
 

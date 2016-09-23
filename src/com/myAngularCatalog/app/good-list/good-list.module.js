@@ -1,4 +1,4 @@
 'use strict';
 
 // Define the `phoneList` module
-angular.module('goodList', []);
+angular.module('goodList', ['core.good']);

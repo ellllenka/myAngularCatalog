@@ -2,6 +2,7 @@
 
 // Define the `phoneDetail` module
 angular.module('goodDetail', [
-  'ngRoute'
+  'ngRoute',
+  'core.good'
 ]);
 
