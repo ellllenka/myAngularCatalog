@@ -1,6 +1,13 @@
-<img ng-src="{{$ctrl.good.images[0]}}" class="good" />
+<img ng-src="{{$ctrl.mainImageUrl}}" class="good" />
 
 <h1>{{$ctrl.good.name}}</h1>
+
+<ul class="good-thumbs">
+  <li ng-repeat="img in $ctrl.good.images">
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+  </li>
+</ul>
+
 <ul>
   <li ng-repeat="descript in $ctrl.good.description">{{descript}}</li>
 </ul>

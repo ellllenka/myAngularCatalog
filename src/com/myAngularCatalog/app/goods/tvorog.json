@@ -7,5 +7,8 @@
     },
     "price": "25",
     "quantity": "10",
-    "images": ["img/goods/tvorog.png"]
+    "images": ["img/goods/tvorog.0.png",
+               "img/goods/tvorog.1.jpg",
+               "img/goods/tvorog.2.jpg"
+    ]
 }

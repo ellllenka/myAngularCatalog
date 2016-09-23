@@ -7,9 +7,13 @@ angular.module('goodDetail').component('goodDetail', {
     function GoodDetailController($http, $routeParams) {
       var self = this;
 
+      self.setImage = function setImage(imageUrl) {
+        self.mainImageUrl = imageUrl;
+      };
+
       $http.get('goods/' + $routeParams.goodId + '.json').then(function(response) {
         self.good = response.data;
-
+        self.setImage(self.good.images[0]);
       });
     }]
   });

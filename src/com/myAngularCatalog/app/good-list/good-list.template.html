@@ -19,7 +19,7 @@
 
     <div class="col-md-10">
       <ul class="goods">
-        <li ng-repeat="good in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+        <li ng-repeat="good in $ctrl.goods | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
           <a href="#!/goods/{{good.id}}" class="thumb">
             <img ng-src="{{good.imageUrl}}" alt="{{good.name}}" />
           </a>

@@ -7,7 +7,10 @@
     },
     "price": "20",
     "quantity": "10",
-    "images": ["img/goods/kefir.png"]
+    "images": ["img/goods/kefir.0.png",
+               "img/goods/kefir.1.jpg",
+               "img/goods/kefir.2.jpg"
+    ]
 }
 
 

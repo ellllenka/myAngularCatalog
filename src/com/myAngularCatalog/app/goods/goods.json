@@ -9,7 +9,7 @@
         },
         "price": "20",
         "quantity": "10",
-        "imageUrl": "img/goods/kefir.png"
+        "imageUrl": "img/goods/kefir.0.png"
     },
     {
         "id": "ryazhenka",
@@ -21,7 +21,7 @@
         },
         "price": "30",
         "quantity": "10",
-        "imageUrl": "img/goods/ryazhenka.png"
+        "imageUrl": "img/goods/ryazhenka.0.png"
     },
     {
         "id": "tvorog",
@@ -33,7 +33,7 @@
         },
         "price": "25 грн",
         "quantity": "10",
-        "imageUrl": "img/goods/tvorog.png"
+        "imageUrl": "img/goods/tvorog.0.png"
     }
 ]
 

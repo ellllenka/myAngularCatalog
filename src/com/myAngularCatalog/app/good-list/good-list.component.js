@@ -25,7 +25,7 @@ angular.module('goodList').component('goodList', {
 
       $http.get('goods/goods.json').then(function (response) {
         self.goods = response.data;
-        self.phones = response.data.slice(0, 5);
+        self.goods = response.data.slice(0, 5);
       });
     }]
   });

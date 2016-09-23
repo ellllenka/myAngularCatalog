@@ -7,5 +7,8 @@
     },
     "price": "30",
     "quantity": "10",
-    "images": ["img/goods/ryazhenka.png"]
+    "images": ["img/goods/ryazhenka.0.png",
+               "img/goods/ryazhenka.1.jpg",
+               "img/goods/ryazhenka.2.jpg"
+    ]
 }
